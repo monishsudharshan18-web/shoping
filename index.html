@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ShopSphere - Premium Lifestyle & Electronics Store" />
+  <title>ShopSphere — Modern Online Shopping</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <span>✨ Limited Offer: Use code <strong>WELCOME20</strong> for 20% OFF your order!</span>
+      <div class="top-bar-links">
+        <span>🚚 Free Shipping on orders over $50</span>
+        <span class="divider">|</span>
+        <a href="#shop" class="top-link">Shop Deals</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+          <path d="M3 6h18"/>
+          <path d="M16 10a4 4 0 0 1-8 0"/>
+        </svg>
+        <span class="brand-name">Shop<span>Sphere</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#shop" class="nav-link">Shop</a>
+        <a href="#features" class="nav-link">Why Us</a>
+        <a href="#newsletter" class="nav-link">Deals</a>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Theme Toggle -->
+        <button id="themeToggleBtn" class="icon-btn" aria-label="Toggle theme" title="Toggle Light / Dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+          </svg>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button id="wishlistBtn" class="icon-btn" aria-label="View Wishlist" title="Wishlist">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+          </svg>
+          <span class="badge" id="wishlistCount">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button id="cartBtn" class="cart-trigger-btn" aria-label="View Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/>
+            <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/>
+          </svg>
+          <span class="cart-label">Cart</span>
+          <span class="badge" id="cartCount">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="icon-btn mobile-only" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-tag">✨ Next-Gen Lifestyle Store</span>
+          <h1 class="hero-title">Elevate Your Everyday Essentials</h1>
+          <p class="hero-subtitle">
+            Curated selection of modern electronics, minimalist apparel, premium footwear, and designer home accents crafted for everyday perfection.
+          </p>
+          <div class="hero-buttons">
+            <a href="#shop" class="btn btn-primary">
+              Explore Catalog
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-secondary">Learn More</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">25K+</span>
+              <span class="stat-label">Happy Customers</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.9 ★</span>
+              <span class="stat-label">Product Rating</span>
+            </div>
+            <div class="stat-separator"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Guaranteed Quality</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700&auto=format&fit=crop&q=80" alt="Hero Featured Product" class="hero-img" />
+            <div class="hero-floating-badge badge-top">
+              <span class="badge-icon">🔥</span>
+              <div>
+                <strong>Hot Deal</strong>
+                <p>Up to 30% Off</p>
+              </div>
+            </div>
+            <div class="hero-floating-badge badge-bottom">
+              <span class="badge-icon">⭐</span>
+              <div>
+                <strong>Top Rated 2026</strong>
+                <p>Audited Quality</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Props Bar -->
+    <section class="perks-strip">
+      <div class="container perks-grid">
+        <div class="perk-box">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="12" x="2" y="6" rx="2"/><circle cx="12" cy="12" r="2"/><path d="M6 12h.01M18 12h.01"/></svg>
+          </div>
+          <div>
+            <h4>Free Global Shipping</h4>
+            <p>On orders exceeding $50</p>
+          </div>
+        </div>
+        <div class="perk-box">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h4>30-Day Money Back</h4>
+            <p>100% Risk-free returns</p>
+          </div>
+        </div>
+        <div class="perk-box">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
+          </div>
+          <div>
+            <h4>Secure Payments</h4>
+            <p>Encrypted 256-bit checkout</p>
+          </div>
+        </div>
+        <div class="perk-box">
+          <div class="perk-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <div>
+            <h4>24/7 Concierge</h4>
+            <p>Dedicated personal support</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Shop Section -->
+    <section class="shop-section" id="shop">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+          <div>
+            <span class="section-tag">Explore Catalog</span>
+            <h2 class="section-title">Discover Our Products</h2>
+          </div>
+          <!-- Live Search Bar -->
+          <div class="search-box">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+            </svg>
+            <input type="text" id="searchInput" placeholder="Search by name, category, or tag..." />
+            <button id="clearSearchBtn" class="clear-search-btn" title="Clear search" aria-label="Clear search">&times;</button>
+          </div>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="filter-bar">
+          <div class="category-pills" id="categoryPills">
+            <button class="pill active" data-category="all">All Items</button>
+            <button class="pill" data-category="electronics">Electronics</button>
+            <button class="pill" data-category="accessories">Accessories</button>
+            <button class="pill" data-category="clothing">Clothing</button>
+            <button class="pill" data-category="footwear">Footwear</button>
+            <button class="pill" data-category="home">Home & Living</button>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect" class="sort-select">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Rated</option>
+              <option value="name">Name (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Active Results Info -->
+        <div class="results-info">
+          <span id="resultsCount">Showing all products</span>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+          <!-- Dynamically populated via app.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState" style="display: none;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+          <h3>No matching products found</h3>
+          <p>Try searching for a different keyword or resetting your category filter.</p>
+          <button id="resetFiltersBtn" class="btn btn-primary">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us / Features -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="text-center mb-4">
+          <span class="section-tag">Our Promise</span>
+          <h2 class="section-title">Designed for Modern Living</h2>
+          <p class="section-subtitle">We partner with ethical manufacturers to ensure every single product meets the highest standards of durability, aesthetics, and eco-responsibility.</p>
+        </div>
+
+        <div class="feature-cards-grid">
+          <div class="feature-card">
+            <div class="card-icon-circle">🌱</div>
+            <h3>Sustainably Sourced</h3>
+            <p>All textiles and packaging are crafted from certified organic and recycled materials to reduce carbon footprints.</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon-circle">⚡</div>
+            <h3>Express Global Dispatch</h3>
+            <p>Every order is carefully inspected, packed, and dispatched within 24 hours via tracked priority couriers.</p>
+          </div>
+          <div class="feature-card">
+            <div class="card-icon-circle">🛡️</div>
+            <h3>2-Year Comprehensive Warranty</h3>
+            <p>Enjoy peace of mind with our no-hassle warranty covering all manufacturing defects on any item.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo / Newsletter Banner -->
+    <section class="newsletter-section" id="newsletter">
+      <div class="container newsletter-box">
+        <div class="newsletter-content">
+          <span class="badge-deal">SPECIAL PROMO CODE: <strong>SAVE10</strong></span>
+          <h2>Join 50,000+ Smart Shoppers</h2>
+          <p>Subscribe to receive secret flash sales, product drops, and an instant $15 welcome voucher.</p>
+          <form id="newsletterForm" class="newsletter-form">
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address..." required />
+            <button type="submit" class="btn btn-primary">Subscribe Now</button>
+          </form>
+          <span class="privacy-note">🔒 We value your privacy. Unsubscribe at any time.</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col brand-col">
+        <div class="brand-logo mb-2">
+          <svg class="logo-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+            <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/>
+            <path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+          <span class="brand-name">Shop<span>Sphere</span></span>
+        </div>
+        <p class="footer-desc">Your ultimate destination for curated lifestyle goods, advanced electronics, and modern apparel.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter" class="social-icon">𝕏</a>
+          <a href="#" aria-label="Instagram" class="social-icon">📷</a>
+          <a href="#" aria-label="GitHub" class="social-icon">💻</a>
+          <a href="#" aria-label="LinkedIn" class="social-icon">💼</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul class="footer-links">
+          <li><a href="#shop" data-cat="electronics">Electronics</a></li>
+          <li><a href="#shop" data-cat="accessories">Accessories</a></li>
+          <li><a href="#shop" data-cat="clothing">Apparel</a></li>
+          <li><a href="#shop" data-cat="footwear">Footwear</a></li>
+          <li><a href="#shop" data-cat="home">Home & Living</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Customer Care</h4>
+        <ul class="footer-links">
+          <li><a href="#">Order Status & Tracking</a></li>
+          <li><a href="#">Shipping & Deliveries</a></li>
+          <li><a href="#">Returns & Exchanges</a></li>
+          <li><a href="#">FAQ & Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact & Hours</h4>
+        <ul class="footer-links">
+          <li>📍 100 Innovation Way, Suite 400</li>
+          <li>✉️ support@shopsphere.io</li>
+          <li>📞 +1 (800) 555-0199</li>
+          <li>⏰ Mon - Fri: 8:00 AM - 8:00 PM EST</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 ShopSphere Inc. Built with HTML, CSS & JavaScript. All rights reserved.</p>
+      <div class="payment-badges">
+        <span>💳 Visa</span>
+        <span>💳 Mastercard</span>
+        <span>⚡ Apple Pay</span>
+        <span>🔒 PayPal</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <h3>Shopping Cart</h3>
+        <span class="drawer-count-badge" id="cartDrawerCount">0 items</span>
+      </div>
+      <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress -->
+    <div class="shipping-progress-box">
+      <div class="progress-label" id="shippingProgressText">Add $50.00 more to get FREE shipping!</div>
+      <div class="progress-track">
+        <div class="progress-bar" id="shippingProgressBar" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <div class="drawer-body" id="cartItemsContainer">
+      <!-- Items dynamically populated -->
+    </div>
+
+    <div class="drawer-footer" id="cartFooter">
+      <!-- Promo code input -->
+      <div class="promo-box">
+        <input type="text" id="couponInput" placeholder="Promo code (SAVE10, WELCOME20)" />
+        <button id="applyCouponBtn" class="btn btn-secondary btn-sm">Apply</button>
+      </div>
+      <div id="couponAppliedBadge" class="coupon-applied-badge" style="display: none;">
+        <span>Promo code applied!</span>
+        <button id="removeCouponBtn" title="Remove promo">&times;</button>
+      </div>
+
+      <!-- Price Breakdown -->
+      <div class="price-breakdown">
+        <div class="breakdown-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">$0.00</span>
+        </div>
+        <div class="breakdown-row discount-row" id="discountRow" style="display: none;">
+          <span>Discount</span>
+          <span id="cartDiscount">-$0.00</span>
+        </div>
+        <div class="breakdown-row">
+          <span>Shipping</span>
+          <span id="cartShipping">$0.00</span>
+        </div>
+        <div class="breakdown-row">
+          <span>Estimated Tax (8%)</span>
+          <span id="cartTax">$0.00</span>
+        </div>
+        <div class="breakdown-row total-row">
+          <span>Total</span>
+          <span id="cartTotal">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Action buttons -->
+      <button id="checkoutBtn" class="btn btn-primary btn-block checkout-btn">
+        Proceed to Checkout
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+        </svg>
+      </button>
+      <button id="clearCartBtn" class="btn-text btn-block text-danger">Clear Cart</button>
+    </div>
+  </aside>
+
+  <!-- Slide-out Wishlist Drawer -->
+  <aside class="cart-drawer" id="wishlistDrawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-title-group">
+        <h3>My Wishlist</h3>
+        <span class="drawer-count-badge" id="wishlistDrawerCount">0 items</span>
+      </div>
+      <button class="close-drawer-btn" id="closeWishlistBtn" aria-label="Close wishlist">&times;</button>
+    </div>
+    <div class="drawer-body" id="wishlistItemsContainer">
+      <!-- Items dynamically populated -->
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal" id="quickViewModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <button class="modal-close" id="closeQuickViewBtn">&times;</button>
+      <div class="modal-content" id="quickViewContent">
+        <!-- Dynamically rendered -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal" id="checkoutModal" aria-hidden="true">
+    <div class="modal-dialog checkout-dialog">
+      <button class="modal-close" id="closeCheckoutBtn">&times;</button>
+      <div class="checkout-modal-content">
+        <h2 class="modal-heading">Secure Checkout</h2>
+        
+        <form id="checkoutForm">
+          <div class="checkout-grid">
+            <!-- Left: Contact & Shipping -->
+            <div class="checkout-form-section">
+              <h3>1. Shipping Information</h3>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkoutFirstName">First Name *</label>
+                  <input type="text" id="checkoutFirstName" required placeholder="Alex" />
+                </div>
+                <div class="form-group">
+                  <label for="checkoutLastName">Last Name *</label>
+                  <input type="text" id="checkoutLastName" required placeholder="Morgan" />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="checkoutEmail">Email Address *</label>
+                <input type="email" id="checkoutEmail" required placeholder="alex@example.com" />
+              </div>
+              <div class="form-group">
+                <label for="checkoutAddress">Street Address *</label>
+                <input type="text" id="checkoutAddress" required placeholder="742 Evergreen Terrace" />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="checkoutCity">City *</label>
+                  <input type="text" id="checkoutCity" required placeholder="Springfield" />
+                </div>
+                <div class="form-group">
+                  <label for="checkoutZip">Postal Code *</label>
+                  <input type="text" id="checkoutZip" required placeholder="97477" />
+                </div>
+              </div>
+
+              <h3 class="mt-3">2. Payment Method</h3>
+              <div class="payment-methods">
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="card" checked />
+                  <span>💳 Credit / Debit Card</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="paypal" />
+                  <span>🅿️ PayPal Express</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="paymentMethod" value="cod" />
+                  <span>💵 Cash on Delivery</span>
+                </label>
+              </div>
+
+              <div id="cardFields" class="card-fields-box">
+                <div class="form-group">
+                  <label for="cardNum">Card Number (Simulated)</label>
+                  <input type="text" id="cardNum" placeholder="4242 •••• •••• 4242" maxlength="19" value="4242 4242 4242 4242" />
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="cardExp">Expiry</label>
+                    <input type="text" id="cardExp" placeholder="MM/YY" maxlength="5" value="12/28" />
+                  </div>
+                  <div class="form-group">
+                    <label for="cardCvc">CVC</label>
+                    <input type="text" id="cardCvc" placeholder="123" maxlength="3" value="888" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Order Summary -->
+            <div class="checkout-summary-section">
+              <h3>Order Summary</h3>
+              <div class="checkout-items-preview" id="checkoutItemsPreview">
+                <!-- Mini items preview -->
+              </div>
+              <div class="checkout-totals">
+                <div class="breakdown-row">
+                  <span>Subtotal</span>
+                  <span id="checkoutSubtotal">$0.00</span>
+                </div>
+                <div class="breakdown-row" id="checkoutDiscountRow" style="display: none;">
+                  <span>Discount</span>
+                  <span id="checkoutDiscount">-$0.00</span>
+                </div>
+                <div class="breakdown-row">
+                  <span>Shipping</span>
+                  <span id="checkoutShipping">$0.00</span>
+                </div>
+                <div class="breakdown-row">
+                  <span>Tax</span>
+                  <span id="checkoutTax">$0.00</span>
+                </div>
+                <div class="breakdown-row total-row">
+                  <span>Total Due</span>
+                  <span id="checkoutTotal">$0.00</span>
+                </div>
+              </div>
+
+              <button type="submit" id="placeOrderBtn" class="btn btn-primary btn-block mt-3">
+                <span class="btn-text">Confirm & Pay</span>
+                <span class="btn-spinner" style="display: none;"></span>
+              </button>
+              <p class="secure-badge-note">🔒 Guaranteed 256-Bit SSL Encrypted & Safe</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Order Success Confirmation Modal -->
+  <div class="modal" id="orderSuccessModal" aria-hidden="true">
+    <div class="modal-dialog text-center success-dialog">
+      <div class="success-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <h2>Thank You For Your Order!</h2>
+      <p class="order-id-badge">Order ID: <span id="confirmedOrderId">#ORD-00000</span></p>
+      <p class="success-message">
+        A confirmation email and tracking link have been dispatched to <strong id="confirmedEmail">user@example.com</strong>.
+      </p>
+      <div class="order-recap-box" id="orderRecapBox">
+        <!-- Order recap summary -->
+      </div>
+      <button id="successContinueShoppingBtn" class="btn btn-primary mt-3">Continue Shopping</button>
+    </div>
+  </div>
+
+  <!-- Floating Toast Notifications -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
